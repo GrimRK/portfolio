@@ -1,0 +1,126 @@
+.home_contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_contact_container
+{
+  background-color: black;
+  width: 70vw;
+  min-width: 888px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.home_contact_title
+{
+  opacity: 0;
+  transform: translateY(-20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home_contact_title_v2
+{
+    display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+    width: 100%;
+}
+.home_contact_title_v2>p
+{
+    font-size: 50px;
+}
+.home_contact_title >h1{
+    font-size: 50px;
+}
+.contact_me_link
+{
+  opacity: 0;
+  transform: translateY(20%);
+  height: 100px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_btn
+{
+  font-size: larger !important;
+  background-image: linear-gradient(90deg, rgb(194, 36, 123) 2%, rgb(234, 99, 221) 30%, rgb(208, 161, 161) 42%, rgb(135, 1, 237));
+  color: white !important;
+  font-weight: 600 !important;
+  border-radius: 100px !important;
+}
+
+.contact_btn_icon{
+  margin: 2px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 100px;
+}
+.show{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.8s;
+}
+
+@media(max-width:1387px){
+.home_contact_container
+  {
+      min-width: 540px;
+  }
+}
+@media(max-width:548px){
+.home_contact_container
+  {
+      min-width: 350px;
+  }
+  .contact_me_link_title
+  {
+      font-size: 18px;
+  }
+}
+@media(max-width:398px){
+    .home_contact_container
+    {
+        min-width: 250px;
+    }
+    .home_contact_title>h1
+    {
+      font-size: 40px;
+    }
+    .home_contact_title_v2>p
+    {
+      font-size: 38px;
+    }
+    .contact_me_link_container
+    {
+        min-width: 73%;
+        height: 60px;
+    }
+    .contact_me_link_title
+    {
+        font-size: 16px;
+        padding-top: 18px;
+    }
+    .contact_me_link_icon_container
+    {
+        font-size: 50px;
+        padding: 4px 4px 0px 4px !important;
+    }
+}

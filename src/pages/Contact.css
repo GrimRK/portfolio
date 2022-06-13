@@ -1,0 +1,133 @@
+body{
+    color: white;
+}
+.contact_container
+{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.contact_left_container
+{
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    background-color: transparent;
+    
+}
+.contact_title
+{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.7s;
+    padding: 10px;
+}
+.contact_description
+{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.7s;
+    padding: 10px;
+    font-family: 'Roboto Mono', sans-serif !important;
+    letter-spacing: 0cm !important;
+    color: rgb(110, 110, 110);
+}
+.contact_right_container
+{
+    height: 100%;
+    width: 47%;
+}
+.contact_form_container
+{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 0.6s;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 8px;
+}
+.contact_form_title
+{
+    font-family: 'Roboto Mono', sans-serif !important;
+    letter-spacing: 0cm !important;
+    margin: 0px 0px 0px 3%;
+}
+.contact_input_div
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    grid-template-columns: 50px;
+    margin: 10px;
+    padding: 10px ;
+    background-color: rgb(31, 31, 31);
+    border-radius: 8px;
+}
+.contact_input_text
+{
+    width: 100%;
+
+    margin: 10px;
+    color:rgb(91, 91, 91) !important;
+}
+.contact_icon
+{
+    font-size: large;
+    color: rgb(91, 91, 91);
+}
+.contact_submit_btn
+{
+    background-image: linear-gradient(90deg, rgb(194, 36, 123) 2%, rgb(234, 99, 221) 30%, rgb(208, 161, 161) 42%, rgb(135, 1, 237));
+    color: white !important;
+    border-radius: 100px !important;
+    font-weight: 700 !important; 
+}
+.btn_title
+{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.right_icon
+{
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    border: 2px solid gray;
+
+}
+.contact_btn_container
+{
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width:991px)
+{
+    .contact_container
+    {
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .contact_left_container
+    {
+        width: 70%;
+        max-width: 700px;
+        min-width: 260px;
+    }
+    .contact_right_container
+    {
+        width: 100%;
+    }
+}
+@media (max-width:451px)
+{
+    .contact_right_container
+    {
+        font-size: small !important;
+    }
+}

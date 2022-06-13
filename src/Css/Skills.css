@@ -1,0 +1,98 @@
+.proglang
+{
+  background-color: black;
+  display: grid;
+  place-items: center;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+.prolang_container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.proglang_icon_container{
+  margin: 20px;
+  background-color: rgb(0, 0, 0);
+  width:75vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(15%);
+}
+.proglang_heading
+{
+  opacity: 0;
+  transform: translateY(-15%);
+}
+/* ---------------------------------------------Prog icon------------------------------------------------ */
+.progicon_container
+{
+  margin: 35px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.progicon_bg{
+  animation: rotates infinite 5s linear;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  filter: blur(20px);
+  object-fit: contain;
+}
+.progicon_icon{
+  position: relative;
+  max-width: 100px;
+  object-fit: contain;
+  z-index: 10 ;
+}
+.progicon_icon_name{
+  position: relative;
+  top: 10%;
+}
+.show
+{
+  opacity: 1;
+  transform: translate(0,0);
+}
+@media(max-width:1387px){
+    
+    .proglang_icon_container{
+        justify-content: center;
+        height: 50vh;
+        overflow-y: scroll;
+      }
+    
+      .progicon_bg{
+        display: none;
+      }
+}
+
+@media(max-width:548px){
+  .progicon_container
+  {
+    margin: 15px;
+    height: 60px;
+    padding: 10px;
+
+  }
+  .progicon_icon,.progicon_bg
+  {
+    max-width: 60px;
+  }
+  .progicon_icon_name
+  {
+    font-size: medium;
+  }
+}
+@media(max-width:398px){
+
+}

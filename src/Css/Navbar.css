@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+body
+{
+    background: rgb(255, 255, 255);
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbtn
+{
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.navbtn>div{
+    display: inline;
+    padding: 8px;
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    z-index:1000;
+}
+.navbar-brand 
+{
+    font-size: 30px;
+}
+.navbar
+{
+    border-bottom: 0.5px solid rgb(31, 31, 31);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.navbar-logo{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+.navbar-logo:hover
+{
+    color: white;
+}
+
+.navbar-mainbg
+{
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+}
+.menu_icon
+{
+    background-color: rgb(255, 255, 255);
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+#navbarSupportedContent
+{
+    overflow: hidden;
+    position: relative;
+
+    
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+#navbarSupportedContent ul
+{
+    padding: 0px;
+    margin: 0px;
+}
+#navbarSupportedContent li
+{
+    list-style-type: none;
+    float: left;
+}
+#navbarSupportedContent ul li .navlink
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 30px 30px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+
+}
+
+#navbarSupportedContent > ul > li .active >a{
+    color: black;
+    background-color: transparent;
+    transition: all 0.7s;
+}
+
+#navbarSupportedContent .navlink:not(:only-child)::after
+{
+    
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 26px;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    transition: 0.5s;
+}
+#navbarSupportedContent .active>.navlink:only-child:after
+{
+    transform: rotate(90deg);
+}
+
+.hori-selector
+{
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition-duration:0.6s ;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 10px;
+
+}
+.hori-selector .right,
+.hori-selector .left{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    bottom: 10px;
+}
+.hori-selector .right{
+    right: -25px;
+}
+.hori-selector .left{
+    left: -25px;
+}
+.hori-selector .right ::before,
+.hori-selector .left::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+.hori-selector .right::before{
+    bottom: 0;
+    right: -25px;
+}
+
+.hori-selector .left::before{
+    bottom: 0;
+    left: -25px;
+}
+.navlink
+{
+    font-weight: bolder;
+    cursor: pointer;
+}
+.navhov:hover
+{
+    background-image: linear-gradient(90deg, rgb(194, 36, 123) 2%, rgb(234, 99, 221) 30%, rgb(208, 161, 161) 42%, rgb(135, 1, 237));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+.navlink>div:hover
+{
+    color: white;
+    background-image: linear-gradient(90deg, rgb(194, 36, 123) 2%, rgb(234, 99, 221) 30%, rgb(208, 161, 161) 42%, rgb(135, 1, 237));
+}
+.logo_container
+{
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+}
+.navtitle
+{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+}
+.navlogo
+{
+    height: 50px;
+    object-fit: contain;
+}
+
+@media (max-width:991px)
+{
+
+    #navbarSupportedContent ul li .navlink{
+        padding: 12px 30px;
+    }
+    .hori-selector{
+        margin-top: 0px;
+        margin-left: 10px;
+        border-radius: 0;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .hori-selector .right,
+    .hori-selector .left{
+        right: 10px;
+    }
+    .hori-selector .left{
+        top: -25px;
+        left: auto;
+    }
+    .hori-selector .right{
+        bottom: -25px;
+    }
+    .hori-selector .left::before{
+        left: -25px;
+        top: -25px;
+    }
+    .hori-selector .right::before{
+        bottom: -25px;
+        left: -25px;
+    }
+}
